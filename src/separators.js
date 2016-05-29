@@ -1,7 +1,9 @@
 'use strict';
 
 function thousands_separators(num) {
-	var s=num.toString();
+ 
+
+  	var s=num.toString();
    
    if(s.indexOf(".")==-1){
    	var l = s.split("").reverse();
@@ -33,7 +35,5 @@ function thousands_separators(num) {
                     return t.split("").reverse().join("") + "." + r;  
                      }  
 
-  
-}
-
+         }
 module.exports = thousands_separators;
